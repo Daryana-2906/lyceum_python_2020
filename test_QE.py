@@ -1,4 +1,4 @@
-from tasks_04.QER import sol_of_guadratic_equation
+from QER import sol_of_guadratic_equation
 
 def test_two_roots():
     a, b, c = 2, 6, 0
@@ -18,7 +18,7 @@ def test_one_root():
 
 def test_no_roots():
     a, b, c = 3, -1, 7
-    expected = 'no roots'
+    expected = 'корней нет'
     actual = sol_of_guadratic_equation(a, b, c)
 
     assert expected == actual
