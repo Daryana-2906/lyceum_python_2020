@@ -8,4 +8,11 @@ def sol_of_guadratic_equation(a, b, c):
         else:
             return root1
     except ValueError:
-        return 'корней нет'
+        return 'no roots'
+    
+ if __name__ == '__main__':
+    a = int(input('введите коэффициент перед х^2: '))
+    b = int(input('введите коэффициент перед х: '))
+    c = int(input('введите свободный член: '))
+
+    print(sol_of_guadratic_equation(a, b, c))
